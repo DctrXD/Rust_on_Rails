@@ -1,1 +1,13 @@
-/target
+# Arquivos gerados durante a compilação
+target/
+
+# Arquivos de configuração específicos do ambiente
+.env
+
+# Arquivos temporários do editor
+*.swp
+*~
+
+# Diretórios de build do IDE
+.idea/
+.vscode/
