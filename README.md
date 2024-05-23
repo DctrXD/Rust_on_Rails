@@ -12,3 +12,7 @@ Bem-vindo ao Rust_on_Rails! Este projeto tem como objetivo construir uma API web
 ## Tecnologias utilizadas
 
 * Rust
+
+## Status
+
+*inacabado

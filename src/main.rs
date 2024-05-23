@@ -6,11 +6,11 @@ use warp::Filter;
 
 #[tokio::main]
 async fn main() {
-    // Initialize routes
-    let routes = controllers::routes();
+    // Configuração do banco de dados (se necessário)
 
-    // Start the server
-    warp::serve(routes)
-        .run(([127, 0, 0, 1], 3030))
-        .await;
+    let routes = warp::path("users")
+        .and(controllers::users::routes()) 
+        .with(warp::cors().allow_any_origin()); 
+
+    warp::serve(routes).run(([127, 0, 0, 1], 3030)).await;
 }
